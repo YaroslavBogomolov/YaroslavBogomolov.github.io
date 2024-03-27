@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <!-- Подключение файлов Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Дополнительные стили для заднего фона -->
+  <style>
+    body {
+      background-image: url('https://plus.unsplash.com/premium_photo-1710294628781-466a6ad88e61?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Укажите ссылку на изображение заднего фона */
+      background-size: cover; /* Сделать изображение фона занимающим всю доступную область */
+      background-repeat: no-repeat; /* Запретить повторение фонового изображения */
+    }
+  </style>
+</head>
+<body>
+
+<!-- Навигационное меню -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Использование изображения логотипа Bootstrap -->
+  <a class="navbar-brand" href="#"><img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="main.html">Главная</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Профиль</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Настройки</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Выйти</a> <!-- Добавлен атрибут href -->
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Контент страницы личного кабинета -->
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <h5 class="card-header bg-primary text-white">Личный кабинет</h5>
+        <div class="card-body">
+          <h5 class="card-title">Информация о пользователе</h5>
+          <p class="card-text">Имя: John Doe</p>
+          <p class="card-text">Email: johndoe@example.com</p>
+          <p class="card-text">Статус: Активен</p>
+        </div>
+        <div class="card-footer text-muted" id="lastLoginTime">
+          Последний вход: <span id="lastLoginDateTime"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Подключение скриптов Bootstrap и JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Скрипт для получения текущей даты и времени -->
+<script>
+  $(document).ready(function(){
+    var dateTimeNow = new Date().toLocaleString();
+    $('#lastLoginDateTime').text(dateTimeNow);
+  });
+</script>
+
+</body>
+</html>

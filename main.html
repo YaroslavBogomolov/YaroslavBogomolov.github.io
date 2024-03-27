@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Page</title>
+  <!-- Подключение файлов Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Дополнительные стили для главной страницы -->
+  <link href="styles/main.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        body {
+          background-image: url('https://plus.unsplash.com/premium_photo-1710294628781-466a6ad88e61?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Укажите ссылку на изображение заднего фона */
+          background-size: cover; /* Сделать изображение фона занимающим всю доступную область */
+          background-repeat: no-repeat; /* Запретить повторение фонового изображения */
+        }
+      </style>
+<!-- Навигационное меню -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="https://getbootstrap.com/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">О нас</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Контакты</a>
+      </li>
+      <!-- Добавляем ссылку на страницу личного кабинета -->
+      <li class="nav-item">
+        <a class="nav-link" href="profile.html">Личный кабинет</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="log.html">Выйти</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Найти</button>
+    </form>
+  </div>
+</nav>
+
+<!-- Контент главной страницы -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center mt-5">Добро пожаловать </h1>
+      <p class="lead text-center">Вы найдете все</p>
+    </div>
+  </div>
+</div>
+<footer class="footer fixed-bottom bg-dark text-white text-center py-3">
+    <div class="container">
+      <span>&copy; 2024 Мой сайт. Все права защищены.</span>
+    </div>
+  </footer>
+
+<!-- Подключение скриптов Bootstrap и JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
